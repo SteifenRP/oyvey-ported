@@ -18,7 +18,7 @@ import me.alpha432.oyvey.features.modules.movement.Step;
 import me.alpha432.oyvey.features.modules.player.FastPlace;
 import me.alpha432.oyvey.features.modules.player.NoFall;
 import me.alpha432.oyvey.features.modules.player.Velocity;
-import me.alpha432.oyvey.features.modules.render.BlockHighlight;
+import me.alpha432.oyvey.features.modules.render.BlockHighlighter;
 import me.alpha432.oyvey.features.modules.render.StorageESP;
 import me.alpha432.oyvey.util.traits.Jsonable;
 import me.alpha432.oyvey.util.traits.Util;
@@ -42,7 +42,7 @@ public class ModuleManager implements Jsonable, Util {
         register(new ReverseStep());
         register(new FastPlace());
         register(new Velocity());
-        register(new BlockHighlight());
+        register(new BlockHighlighter());
         register(new NoFall());
         register(new StorageESP());
     }
